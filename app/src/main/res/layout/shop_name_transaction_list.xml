@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="-5dp"
+            android:background="@color/view_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2020-03-04 12:51"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtViewBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDate"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/view_bill"
+                android:textAlignment="center"
+                android:textColor="@color/view_bill_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtBillAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/view_color"
+            android:text="1000"
+            android:textAlignment="center"
+            android:textColor="@color/app_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtPaid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@color/view_color"
+            android:text="1000"
+            android:textAlignment="center"
+            android:textColor="@color/app_color"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
